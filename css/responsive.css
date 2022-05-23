@@ -96,29 +96,10 @@
 /* xs */
 @media (max-width: 767px) {
 
-  .main-nav .container {
-    display: none;
-  }
-  
-  .fixed-menu .container {
-    display: block;
-  }
-
-   .fixed-menu .container {
+  .navbar-brand {
     width: 100%;
   }
-
-  .navbar-brand {
-    width: inherit;
-  }
-
-  .fixed-menu .navbar-right li a {
-    padding: 7px 25px;
-  }
-
-  #home {
-    margin-top: 10%;
-  }
+ 
 
   .slider-block {
     margin-bottom: -240px;
@@ -200,7 +181,7 @@
 @media (max-width: 479px) {
 
   .main-nav .container {
-    display: none;
+    display: block;
   }
 
   .fixed-menu .container {
