@@ -1,0 +1,306 @@
+/* lg */ 
+@media (min-width: 1200px) {
+  
+}
+
+/* md */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+  .navbar-right {
+    padding: 0 30px 0 0;
+  }
+
+  .navbar-right li a {
+    padding: 35px 15px;
+  }
+
+  .fixed-menu .container {
+    width: 100%;
+  }
+
+  .fixed-menu .navbar-right {
+    padding-right: 30px;
+  }
+
+  .fixed-menu .navbar-right li a {
+    padding: 20px;
+  }
+
+  .guitar {
+    right:0;
+  }
+
+  .guitar2 {
+    height: 100%
+  }
+
+  .guitar2 img {
+    padding-top: 20%;
+  }
+
+  .ear-piece {
+    left: -15%;
+  }
+
+  #event .col-md-9 {
+    z-index: 10;
+  }
+
+
+}
+
+/* sm */
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .navbar-brand {
+    width: 215px;
+    height: 60px;
+  }
+
+  .navbar-right {
+    padding: 0;
+  }
+
+  .navbar-right li a {
+    padding:20px 11px;
+    font-size: 17px;
+  }
+
+  .fixed-menu .container {
+    width: 100%;
+  }
+
+  .fixed-menu .navbar-right {
+    padding-right: 30px;
+  }
+
+  .fixed-menu .navbar-right li a {
+    padding: 20px 15px;
+    font-size: 17px;
+  }
+
+  .guitar, .ear-piece, .light {
+    display: none;
+  }
+
+  .guitar2 {
+    height: 100%;
+  }
+
+  .guitar2 img {
+    padding-top:38%;
+  }
+
+}
+
+/* xs */
+@media (max-width: 767px) {
+
+  .main-nav .container {
+    display: none;
+  }
+  
+  .fixed-menu .container {
+    display: block;
+  }
+
+   .fixed-menu .container {
+    width: 100%;
+  }
+
+  .navbar-brand {
+    width: inherit;
+  }
+
+  .fixed-menu .navbar-right li a {
+    padding: 7px 25px;
+  }
+
+  #home {
+    margin-top: 10%;
+  }
+
+  .slider-block {
+    margin-bottom: -240px;
+    padding: 10px;
+    line-height: 0;
+  }
+
+  .slider-block h2 {
+    font-size: 20px;
+    margin-top: 3px;
+  }
+
+  .slider-block h4 {
+    font-size: 16px;
+  }
+
+  .slider-block a {
+    font-size: 14px;
+    color: #2da1c5;
+  }
+
+  #explore {
+    background-size:cover;
+  }
+
+  #explore h2 {
+    float: inherit;
+    font-size: 30px;
+    margin-bottom: 30px;
+  }  
+
+   /*event */
+  .single-event {
+    margin-bottom: 40px;
+  }
+
+
+  #event h2, 
+  #about h2, 
+  #brand h2 {
+    font-size: 30px;
+  }
+
+  #brand {
+    background-position: right 0 bottom 0;
+  }
+
+  #brand .item ul li {
+    width: 30%;
+    margin-right:3%
+  }
+
+  #brand .item ul li:last-child {
+    margin-right: 0;
+   }
+
+
+  #footer {
+    font-size: 16px;
+  }
+
+  .watch, .guitar, .guitar2, .twit, .light, .ear-piece {
+    display: none;
+  }
+
+  .contact-section {
+    background-position: left 0 bottom 0;
+    background-size: cover;
+  }
+
+  .about-content {
+    width: 100%;    
+    padding: 70px 25px 110px;
+  }
+
+}
+
+/* XS Portrait */
+@media (max-width: 479px) {
+
+  .main-nav .container {
+    display: none;
+  }
+
+  .fixed-menu .container {
+    display: block;
+  }
+
+  .fixed-menu .navbar-right li a {
+    padding: 10px 25px;
+  }
+
+  /* Home */
+
+  #home {
+    margin-top: 18%;
+  }
+
+  .slider-block {
+    margin-bottom: -140px;
+    padding: 10px;
+    line-height: 0;
+  }
+
+  .slider-block h2 {
+    font-size: 20px;
+    margin-top: 3px;
+  }
+
+  .slider-block h4 {
+    font-size: 14px;
+  }
+
+  .slider-block a {
+    font-size: 14px;
+    color: #2da1c5;
+  }
+
+  .fixed-menu .container {
+    width: 100%;
+  }
+
+  .navbar-brand {
+    width: inherit;
+  }
+
+  /* Explore */
+  #explore {
+    background-size:cover;
+  }
+
+  #explore h2 {
+    float: inherit;
+    font-size: 30px;
+    margin-bottom: 30px;
+  }  
+
+    /*event */
+  .single-event {
+    margin-bottom: 40px;
+  }
+
+  .about-content {
+    width: 100%;    
+    padding: 70px 30px 110px;
+  }
+
+  #event h2, 
+  #about h2, 
+  #brand h2 {
+    font-size: 30px;
+  }
+
+  .about-content p {
+    font-size: 15px;
+  }
+
+  #brand {
+    background-position: right 0 bottom;
+  }
+
+  #brand .item ul li {
+    width: 45%;
+    margin-right: 5%
+  }
+
+  #brand .item ul li:last-child {
+    margin-right: 0;
+   }
+ 
+  #footer {
+    font-size: 14px;
+  }
+
+  .watch, .guitar, .guitar2, .twit, .light, .ear-piece {
+    display: none;
+  }
+
+  .contact-section {
+    background-position: left 0 bottom 0;
+    background-size: cover;
+  }
+
+}
+

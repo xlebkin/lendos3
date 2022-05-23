@@ -1,0 +1,36 @@
+.slick-slider{
+	min-width: 0;
+	margin-bottom: -10px;
+}
+/* Ограничивающая оболочка */
+.slick-list {
+	overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track{
+	display: flex;
+	align-items: flex-start;
+}
+
+/* Слайд */
+.slick-slide{
+	width: 100%;
+}
+
+/* Конкретный слайдер */
+.slider {
+	position: relative;
+	border: none;
+	width: 100%;
+}
+
+.slider__item {
+	text-align: center;
+	width: 100%;
+}
+.slider__item img{
+	width: 100%;
+	max-height: 700px;
+	cursor: pointer;
+	overflow: hidden;
+}
