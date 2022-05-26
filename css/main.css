@@ -100,8 +100,7 @@ h2 {
 }
 
 .navbar-brand img {
-  position: absolute;
-  top: -35px;
+  margin-top: 10px;
 }
 
 .navbar-right {
@@ -260,7 +259,7 @@ h2 {
 }
 
 #benefits .item {
-  padding: 15px 0 15px;
+  padding: 15px;
   max-width: 300px;
   margin: 10px;
 
