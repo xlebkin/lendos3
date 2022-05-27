@@ -34,7 +34,7 @@ try {
     //Контент сообщения
     $mail->isHTML(true);
     $mail->Subject = 'Моя Музыка';
-    $mail->Body    = '';
+    $mail->Body    = $body;
     $mail->send();
 echo 'Сообщение успешно отправлено';
     } catch (Exception $e) {
