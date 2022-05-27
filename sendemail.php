@@ -28,7 +28,7 @@ try {
     //Отправитель
     $mail->setFrom('xleb2342@gmail.com');
     // Получатели
-    $mail->addAddress('adfkjgfhdsjfhfsvjlkd@gmail.com');
+    $mail->addAddress('xleb2342@gmail.com');
 
     //Контент сообщения
     $mail->isHTML(true);
