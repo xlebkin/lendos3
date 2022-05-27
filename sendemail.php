@@ -2,6 +2,19 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 require 'vendor/autoload.php';
+
+$name = $_POST['name'];
+$email = $_POST['email'];
+$message = $_POST['message'];
+
+$title = "Заголовок письма";
+$body = "
+<h2>Новое письмо</h2>
+<b>Имя:</b> $name<br>
+<b>Почта:</b> $email<br><br>
+<b>Сообщение:</b><br>$message
+";
+
 $mail = new PHPMailer(true);
 try {
     $mail->SMTPDebug = 4;
@@ -20,9 +33,8 @@ try {
 
     //Контент сообщения
     $mail->isHTML(true);
-    $mail->Subject = 'Мое первое сообщение далеко';
-    $mail->Body    = 'Мое сообщение о новых';
-    $mail->AltBody = 'Новое сообщение через mailer';
+    $mail->Subject = 'Моя Музыка';
+    $mail->Body    = '';
     $mail->send();
 echo 'Сообщение успешно отправлено';
     } catch (Exception $e) {
