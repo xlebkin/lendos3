@@ -1,20 +1,31 @@
 <?php
-	header('Content-type: application/json');
-	$status = array(
-		'type'=>'success',
-		'message'=>'Thank you for contact us. As early as possible  we will contact you '
-	);
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+require 'vendor/autoload.php';
+$mail = new PHPMailer(true);
+try {
+    $mail->SMTPDebug = 4;
+    $mail->isSMTP();
+    $mail->Host = "smtp.gmail.com";//Сервер SMTP gmail
+    $mail->SMTPAuth = true;
+    $mail->Username = "xleb2342@gmail.com";//В документации Google указано что логин это адрес вместе с собакой
+    $mail->Password = "1230984576";//Пароль
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+    $mail->Port = 587;
+    $mail->CharSet = 'UTF-8';
+    //Отправитель
+    $mail->setFrom('xleb2342@gmail.com');
+    // Получатели
+    $mail->addAddress('adfkjgfhdsjfhfsvjlkd@gmail.com');
 
-    $name = @trim(stripslashes($_POST['name'])); 
-    $email = @trim(stripslashes($_POST['email'])); 
-    $subject = @trim(stripslashes($_POST['subject'])); 
-    $message = @trim(stripslashes($_POST['message'])); 
-
-    $email_from = $email;
-    $email_to = 'email@email.com';//replace with your email
-
-    $body = 'Name: ' . $name . "\n\n" . 'Email: ' . $email . "\n\n" . 'Subject: ' . $subject . "\n\n" . 'Message: ' . $message;
-
-    $success = @mail($email_to, $subject, $body, 'From: <'.$email_from.'>');
-
-    die;
+    //Контент сообщения
+    $mail->isHTML(true);
+    $mail->Subject = 'Мое первое сообщение далеко';
+    $mail->Body    = 'Мое сообщение о новых';
+    $mail->AltBody = 'Новое сообщение через mailer';
+    $mail->send();
+echo 'Сообщение успешно отправлено';
+    } catch (Exception $e) {
+        echo 'При отправке сообщения произошла следующая ошибка : ', $mail->ErrorInfo;
+}
+?>

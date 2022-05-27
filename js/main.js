@@ -10,17 +10,6 @@ $(document).ready(function(){
 	});
 });
 
-// Contact form validation
-
-var form = $('.contact-form');
-form.submit(function () {
-	$this = ($(this));
-	$.post($(this).attr('action'), function(data) {
-		$this.prev().text(data.message).fadeIn().delay(3000).fadeOut();
-	},'json');
-	return false;
-});
-
 $('a[href^="#"').on('click', function() {
 
 let href = $(this).attr('href');
@@ -43,5 +32,18 @@ $(window).scroll(function(){
 	}
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+    const form = document.getElementById('form');
+    form.addEventListener('submit', formSend);
+    
+    async function formSend(e) {
+        e.preventDefault();
 
+        let formData = new FormData(form);
+        let response = await fetch('sendemail.php', {
+            method: "POST",
+            body: formData
+        });
+    }
+});
 
