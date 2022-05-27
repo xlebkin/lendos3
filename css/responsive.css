@@ -96,11 +96,10 @@
 /* xs */
 @media (max-width: 767px) {
 
-  .navbar-brand {
-    width: 100%;
+  header {
+    display: none;
   }
  
-
   .slider-block {
     margin-bottom: -240px;
     padding: 10px;
