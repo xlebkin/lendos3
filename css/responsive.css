@@ -179,24 +179,6 @@
 /* XS Portrait */
 @media (max-width: 479px) {
 
-  .main-nav .container {
-    display: block;
-  }
-
-  .fixed-menu .container {
-    display: block;
-  }
-
-  .fixed-menu .navbar-right li a {
-    padding: 10px 25px;
-  }
-
-  /* Home */
-
-  #home {
-    margin-top: 18%;
-  }
-
   .slider-block {
     margin-bottom: -140px;
     padding: 10px;
