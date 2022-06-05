@@ -10,6 +10,16 @@ $(document).ready(function(){
 	});
 });
 
+$(document).ready(function(){
+	$('.evento .slider').slick({
+		arrows:true,
+		dots:false,
+		autoplay:false,
+		speed:1000,
+		autoplaySpeed:3500,
+	});
+});
+
 $('a[href^="#"').on('click', function() {
 
 let href = $(this).attr('href');
