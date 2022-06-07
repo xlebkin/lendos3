@@ -18,17 +18,17 @@ $body = "
 $mail = new PHPMailer(true);
 try {
     $mail->isSMTP();
-    $mail->Host = "smtp.gmail.com";//Сервер SMTP gmail
+    $mail->Host = "smtp.mail.ru";//Сервер SMTP
     $mail->SMTPAuth = true;
-    $mail->Username = "xleb2342@gmail.com";//В документации Google указано что логин это адрес вместе с собакой
-    $mail->Password = "1230984576";//Пароль
-    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-    $mail->Port = 587;
+    $mail->Username = "m43545645673@mail.ru";//В документации указано что логин это адрес вместе с собакой
+    $mail->Password = "fmfFdCcu8nmv0HfX7Jha";//Пароль
+    $mail->SMTPSecure = ssl;
+    $mail->Port = 465;
     $mail->CharSet = 'UTF-8';
     //Отправитель
-    $mail->setFrom('xleb2342@gmail.com');
+    $mail->setFrom('m43545645673@mail.ru');
     // Получатели
-    $mail->addAddress('xleb2342@gmail.com');
+    $mail->addAddress('m43545645673@mail.ru');
 
     //Контент сообщения
     $mail->isHTML(true);
